@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+nav {
+    width: 100vw;
+    height: 50px;
+    padding: 0 7.3206vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+nav h1 {
+    font-size: 2rem;
+    color: rgb(48, 67, 82);
+}
+nav ul {
+    display: flex;
+    gap: 40px;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(48, 67, 82);
+    font-weight: 600;
+    transition: all 0.5s;
+}
+nav ul li a:hover {
+    color: rgba(48, 67, 82, 50%) ;
+}
+nav ul .home {
+    border-bottom: 2px solid  rgb(48, 67, 82) ;
+    padding-bottom: 5px;
+}
+nav .nav-menu {
+    background:none;
+    border: none;
+    border: 1px solid transparent;
+    display: none;
+    color:rgb(48, 67, 82) ;
+    font-size: 2rem;
+}
+.hero {
+    height: 100vh;
+    position: relative;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 50%);
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero .info {
+    max-width: 950px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    color: white;
+}
+.hero .info h1 {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 70px;
+    letter-spacing: 10px;
+}
+.hero .info p {
+    line-height: 50px;
+    font-size: 1.5rem;
+}
+.hero .info p span {
+    color: rgb(228, 76, 101);
+}
+.hero .info button {
+    width: 167px;
+    height: 53px;
+    border: none;
+    background-color:rgb(228, 76, 101) ;
+    color: white;
+    border-radius:5px ;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.hero .info button:hover {
+    background-color: white;
+    color: rgb(228, 76, 101);
+}
+.background {
+    background-color: rgb(240, 240, 240);
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+.container {
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+.background .container .info {
+    max-width: 850px;
+    background-color: white;
+    padding: 5.1244vw;
+    border-radius: 5px;
+}
+.background .container .info h1, .heading-info h1 {
+    line-height: 80px;
+    letter-spacing: 10px;
+}
+.background .container .info p {
+    line-height: 50px;
+    color: gray;
+    font-size: 1.5rem;
+}
+.background .container img {
+    outline: 15px solid white;
+    width: 250px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.team {
+    background-color: rgb(240, 240, 240) ;
+    padding-bottom: 50px;
+}
+.heading-info {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px
+}
+.heading-info p {
+    color: gray;
+    font-size: 1.5rem;
+}
+.team .container {
+    margin-top: 50px;
+    gap: 30px;
+}
+.team .container .card {
+    width: 360px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.team .container .card img {
+    border-radius: 50%;
+}
+.team .container .card h2 {
+    color: rgb(228, 76, 101) ;
+}
+.team .container .card p {
+    text-align: center;
+    line-height: 30px;
+    font-weight: 600;
+    color: white;
+    display: none;
+    transition:  1s;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+}
+.team .container .card:hover p {
+    display: block;
+}
+.team .container .card:hover {
+    background-color: #304352;
+}
+.gallery {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.gallery .container {
+    gap: 40px;
+}
+.gallery .container .card {
+    width:525px ;
+}
+.gallery .container .card img {
+    width: 100%;
+    border-radius: 5px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #304352 ;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+footer h2 {
+    color: white;
+    letter-spacing: 10px;
+    padding-top: 10px;
+}
+.icons {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.icons button {
+    background: none;
+    border: 1px solid white;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.icons button i {
+    color: white;
+    font-size: 1rem;
+}
+.icons button:hover {
+    background-color: white;
+}
+.icons button:hover i {
+    color:rgb(228, 76, 101) ;
+}
+footer p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+footer p span {
+    color:rgb(228, 76, 101)  ;
+}
+@media screen and (max-width:992px) {
+    html {
+        font-size: 10px;
+    }
+    nav ul {
+        display: none;
+    }
+    nav .nav-menu {
+        display: block;
+    }
+    .team .container .card img {
+        width: 150px;
+    }
+    .hero .info p {
+        line-height: 30px;
+    }
+    .hero .info h1 {
+        line-height: 50px;
+    }
+}
